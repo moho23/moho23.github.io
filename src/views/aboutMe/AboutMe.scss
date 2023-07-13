@@ -1,0 +1,132 @@
+@import "src/assets/references/index";
+
+.about-me-cmp {
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-me-content {
+        margin: 5% 10%;
+        @include main-size-pre-lg {
+            margin: 5%;
+        }
+        @include main-size-pre-md {
+            margin: 0;
+        }
+
+        .my-detail {
+            width: 100%;
+            align-items: flex-start;
+            display: flex;
+            margin: 0;
+            column-gap: 36px;
+            @include main-size-pre-lg {
+                column-gap: 24px;
+            }
+            @include main-size-pre-md {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .detail {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                @include main-size-pre-md {
+                    align-items: center;
+                }
+
+                .job-title {
+                    font-size: 18px;
+                    color: #aaa;
+                    font-weight: 400;
+                    margin-bottom: 12px;
+                    letter-spacing: 2px;
+                }
+
+                .name {
+                    font-size: 36px;
+                    margin-bottom: 18px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    color: $ultraLightGray;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                    text-align: justify;
+                }
+
+                .btn-gp {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 16px;
+
+                    .my-btn {
+                        padding: 12px 24px;
+                        background-color: transparent;
+                        outline: none;
+                        color: $white;
+                        box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .78);
+                        transition: all .3s ease-in-out;
+                        border-radius: 30px;
+                        cursor: pointer;
+
+                        &.primary {
+                            border: 2px solid $primary;
+                            background-color: $middleGray;
+
+                            &:hover {
+                                background-color: $primary;
+                            }
+                        }
+
+                        &.simple {
+                            border: 2px solid $ultraLightGray;
+                            background-color: $middleGray;
+
+                            &:hover {
+                                color: $middleGray;
+                                background-color: $ultraLightGray;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .image-div {
+                background: $darkGray;
+                display: block;
+                position: relative;
+                width: 100%;
+                flex: 1 1;
+                max-width: 300px;
+                max-height: 300px;
+                min-width: 264px;
+                min-height: 264px;
+                border-radius: 1000px;
+                overflow: hidden;
+                border: 18px solid $darkGray;
+                -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8);
+                -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8);
+                box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8);
+                @include main-size-pre-md {
+                    width: 100%;
+                    max-width: 264px;
+                    flex-shrink: 0;
+                    margin-bottom: 36px;
+                }
+
+                .me {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

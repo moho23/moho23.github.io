@@ -1,0 +1,64 @@
+@import "src/assets/references/index";
+
+.my-resume-footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px 40px;
+    margin-top: 24px;
+    background-color: #252525;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: -40px;
+    margin-left: -40px;
+    border-top: 2px solid $middleGray;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    @include main-size-pre-lg {
+        padding: 16px 40px;
+        margin-bottom: -24px;
+        margin-left: -24px;
+        border-radius: 0;
+        width: calc(100% - 32px);
+    }
+    @include main-size-pre-md {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 16px;
+    }
+
+    .links-div {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        width: 100%;
+        @include main-size-pre-md {
+            justify-content: center;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 14px;
+            opacity: 0.6;
+
+            &:hover {
+                text-decoration: underline;
+                opacity: 1;
+            }
+        }
+    }
+
+    .copy-write {
+        width: fit-content;
+
+        p {
+            white-space: nowrap;
+            color: $ultraLightGray;
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}

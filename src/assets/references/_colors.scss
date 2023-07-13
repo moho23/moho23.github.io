@@ -1,0 +1,20 @@
+@use "sass:selector";
+
+//Global Color
+$white: #F5F5F5;
+$bgGray: #222;
+$middleGray: #333;
+$darkGray: #444;
+$lightGray: #8b8b8b;
+$ultraLightGray: #d5d5d5;
+$primary: #007ced;
+$black: #000;
+$orange: #db9300;
+$light-orange: #f0ddb8;
+$bubble-message-owner: #f9f3dd;
+$bubble-message: #f2f3f5;
+
+//Global Variables
+$font-family: "Shabnam";
+$auth-max-width-container: 400px;
+$max-width-container: 1200px;

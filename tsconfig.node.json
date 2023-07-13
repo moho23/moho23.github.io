@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "types": [
+            "node"
+        ],
+        "moduleResolution": "classic"
+    },
+    "include": [
+        "vite.config.ts"
+    ]
+}

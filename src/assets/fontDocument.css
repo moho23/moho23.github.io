@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Shabnam;
+    font-style: normal;
+    font-weight: 700;
+    src: url('font/Shabnam.ttf');
+}
+
+@font-face {
+    font-family: Shabnam;
+    font-style: normal;
+    font-weight: bold;
+    src: url('font/Shabnam-Bold.ttf');
+}
+
+@font-face {
+    font-family: Shabnam;
+    font-style: normal;
+    font-weight: 300;
+    src: url('font/Shabnam-Light.ttf');
+}
+
+@font-face {
+    font-family: Diba;
+    font-style: normal;
+    font-weight: 700;
+    src: url('font/Diba.ttf');
+}

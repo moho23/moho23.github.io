@@ -1,0 +1,35 @@
+@import "src/assets/references/index";
+
+.my-resume-main-page {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    flex-direction: column;
+    display: flex;
+
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        position: relative;
+        flex: 0 0 100%;
+        padding: 40px;
+        background-color: $bgGray;
+        -webkit-box-shadow: 0 0 40px -10px rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 0 40px -10px rgba(0, 0, 0, .2);
+        box-shadow: 0 0 40px -10px rgba(0, 0, 0, .2);
+        border-radius: 40px;
+        width: calc(100% - 80px);
+        @include responsive-more-size(max-width, 1200px, 100%, 100%, 100%);
+        box-sizing: border-box;
+        margin: 3% auto;
+        @include main-size-pre-lg {
+            border-radius: 0;
+            margin: 0;
+            padding: 24px;
+            height: 100%;
+            width: calc(100% - 48px);
+            box-sizing: unset;
+        }
+    }
+}
