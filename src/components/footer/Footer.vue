@@ -6,7 +6,7 @@
             <a class="footer-link" target="_blank" href="mailto:78mohammadhossein@gmail.com">Email</a>
         </div>
         <div class="copy-write">
-            <p>© {{ new Date().getFullYear() }} All rights reserved by mamahossein</p>
+            <p>© {{ new Date().getFullYear() }} All rights reserved by <br class="name-breaker">mamahossein</p>
         </div>
     </div>
 </template>

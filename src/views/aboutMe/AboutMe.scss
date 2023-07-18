@@ -3,6 +3,7 @@
 .about-me-cmp {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
 
     .about-me-content {
         margin: 5% 10%;
@@ -46,6 +47,10 @@
                 .name {
                     font-size: 36px;
                     margin-bottom: 18px;
+                    text-align: left;
+                    @include main-size-pre-md {
+                        text-align: center;
+                    }
                 }
 
                 .description {

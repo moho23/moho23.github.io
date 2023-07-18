@@ -59,6 +59,17 @@
             font-size: 14px;
             font-weight: 400;
             margin: 0;
+            text-align: center;
+            @include main-size-pre-md {
+                line-height: 20px;
+            }
+
+            .name-breaker {
+                display: none;
+                @include main-size-pre-md {
+                    display: flex;
+                }
+            }
         }
     }
 }

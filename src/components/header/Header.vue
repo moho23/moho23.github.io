@@ -13,8 +13,8 @@
                 </router-link>
             </template>
         </div>
-        <div class="menu-icon">
-            <img :src="menuIcon" alt="menu">
+        <div id="burgerMenuDiv" @click="changeBurgerStatus" class="menu-icon">
+            <img id="burgerMenu" :src="menuIcon" alt="menu">
         </div>
     </div>
 </template>
@@ -23,6 +23,7 @@
 import {ref} from "vue";
 import menuIcon from "@/assets/images/icons/burger.svg"
 
+const emit = defineEmits(["changeBurgerStatus"])
 const headerOptions = ref<{
     id: number,
     route: string,
@@ -54,6 +55,11 @@ const headerOptions = ref<{
         route: "#contact"
     },
 ])
+
+function changeBurgerStatus(event: any) {
+    console.log(1)
+    emit("changeBurgerStatus", event)
+}
 </script>
 
 <style lang="scss" scoped>

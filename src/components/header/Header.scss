@@ -3,9 +3,13 @@
 .my-resume-header {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 80px);
     justify-content: space-between;
-    margin-bottom: 40px;
+    padding: 40px 40px 20px 40px;
+    @include main-size-pre-lg {
+        padding: 12px 16px;
+        width: calc(100% - 32px);
+    }
 
     .my-detail {
         display: flex;
@@ -22,6 +26,10 @@
             justify-content: center;
             font-weight: 900;
             font-size: 24px;
+            @include main-size-pre-lg {
+                width: 36px;
+                height: 36px;
+            }
         }
 
         .fullname {
@@ -29,14 +37,18 @@
             color: $white;
             font-weight: 900;
             letter-spacing: 1px;
+            text-align: left;
             @include main-size-pre-lg {
                 font-size: 16px;
+            }
+            @include main-size-pre-md {
+                text-align: center;
             }
         }
     }
 
     .menu-icon {
-        @include main-size-pre-lg {
+        @include main-size-pre-md {
             display: flex;
             align-items: center;
             width: 24px;
@@ -54,7 +66,7 @@
         display: flex;
         align-items: center;
         column-gap: 20px;
-        @include main-size-pre-lg {
+        @include main-size-pre-md {
             display: none;
         }
 
